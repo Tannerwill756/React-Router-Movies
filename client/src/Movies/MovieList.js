@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 
 const MovieList = props => {
-  const [movies, setMovies] = useState([])
+  const [movies, setMovies] = useState([]);
+  console.log(movies);
   useEffect(() => {
     const getMovies = () => {
       axios
